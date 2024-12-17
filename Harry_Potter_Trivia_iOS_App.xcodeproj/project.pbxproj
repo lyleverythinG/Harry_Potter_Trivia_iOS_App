@@ -6,17 +6,40 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2686893B2D1112E0008D46BE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2686892E2D1112E0008D46BE /* Constants.swift */; };
+		2686893C2D1112E0008D46BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2686892F2D1112E0008D46BE /* ContentView.swift */; };
+		2686893D2D1112E0008D46BE /* Harry_Potter_Trivia_iOS_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268689312D1112E0008D46BE /* Harry_Potter_Trivia_iOS_AppApp.swift */; };
+		2686893E2D1112E0008D46BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2686892B2D1112E0008D46BE /* Preview Assets.xcassets */; };
+		2686893F2D1112E0008D46BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2686892D2D1112E0008D46BE /* Assets.xcassets */; };
+		268689402D1112E0008D46BE /* deep-in-the-dell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 268689302D1112E0008D46BE /* deep-in-the-dell.mp3 */; };
+		268689412D1112E0008D46BE /* hiding-place-in-the-forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 268689322D1112E0008D46BE /* hiding-place-in-the-forest.mp3 */; };
+		268689422D1112E0008D46BE /* let-the-mystery-unfold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 268689332D1112E0008D46BE /* let-the-mystery-unfold.mp3 */; };
+		268689432D1112E0008D46BE /* magic-in-the-air.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 268689342D1112E0008D46BE /* magic-in-the-air.mp3 */; };
+		268689442D1112E0008D46BE /* magic-wand.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 268689352D1112E0008D46BE /* magic-wand.mp3 */; };
+		268689452D1112E0008D46BE /* negative-beeps.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 268689362D1112E0008D46BE /* negative-beeps.mp3 */; };
+		268689462D1112E0008D46BE /* page-flip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 268689372D1112E0008D46BE /* page-flip.mp3 */; };
+		268689472D1112E0008D46BE /* spellcraft.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 268689382D1112E0008D46BE /* spellcraft.mp3 */; };
+		268689482D1112E0008D46BE /* trivia.json in Resources */ = {isa = PBXBuildFile; fileRef = 268689392D1112E0008D46BE /* trivia.json */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		2686892B2D1112E0008D46BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2686892D2D1112E0008D46BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2686892E2D1112E0008D46BE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2686892F2D1112E0008D46BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		268689302D1112E0008D46BE /* deep-in-the-dell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "deep-in-the-dell.mp3"; sourceTree = "<group>"; };
+		268689312D1112E0008D46BE /* Harry_Potter_Trivia_iOS_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Harry_Potter_Trivia_iOS_AppApp.swift; sourceTree = "<group>"; };
+		268689322D1112E0008D46BE /* hiding-place-in-the-forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "hiding-place-in-the-forest.mp3"; sourceTree = "<group>"; };
+		268689332D1112E0008D46BE /* let-the-mystery-unfold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "let-the-mystery-unfold.mp3"; sourceTree = "<group>"; };
+		268689342D1112E0008D46BE /* magic-in-the-air.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "magic-in-the-air.mp3"; sourceTree = "<group>"; };
+		268689352D1112E0008D46BE /* magic-wand.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "magic-wand.mp3"; sourceTree = "<group>"; };
+		268689362D1112E0008D46BE /* negative-beeps.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "negative-beeps.mp3"; sourceTree = "<group>"; };
+		268689372D1112E0008D46BE /* page-flip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "page-flip.mp3"; sourceTree = "<group>"; };
+		268689382D1112E0008D46BE /* spellcraft.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spellcraft.mp3; sourceTree = "<group>"; };
+		268689392D1112E0008D46BE /* trivia.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = trivia.json; sourceTree = "<group>"; };
 		26E589512D10835700C094D7 /* Harry_Potter_Trivia_iOS_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Harry_Potter_Trivia_iOS_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		26E589532D10835700C094D7 /* Harry_Potter_Trivia_iOS_App */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Harry_Potter_Trivia_iOS_App;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		26E5894E2D10835700C094D7 /* Frameworks */ = {
@@ -29,10 +52,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2686892C2D1112E0008D46BE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2686892B2D1112E0008D46BE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2686893A2D1112E0008D46BE /* Harry_Potter_Trivia_iOS_App */ = {
+			isa = PBXGroup;
+			children = (
+				2686892C2D1112E0008D46BE /* Preview Content */,
+				2686892D2D1112E0008D46BE /* Assets.xcassets */,
+				2686892F2D1112E0008D46BE /* ContentView.swift */,
+				2686892E2D1112E0008D46BE /* Constants.swift */,
+				268689302D1112E0008D46BE /* deep-in-the-dell.mp3 */,
+				268689312D1112E0008D46BE /* Harry_Potter_Trivia_iOS_AppApp.swift */,
+				268689322D1112E0008D46BE /* hiding-place-in-the-forest.mp3 */,
+				268689332D1112E0008D46BE /* let-the-mystery-unfold.mp3 */,
+				268689342D1112E0008D46BE /* magic-in-the-air.mp3 */,
+				268689352D1112E0008D46BE /* magic-wand.mp3 */,
+				268689362D1112E0008D46BE /* negative-beeps.mp3 */,
+				268689372D1112E0008D46BE /* page-flip.mp3 */,
+				268689382D1112E0008D46BE /* spellcraft.mp3 */,
+				268689392D1112E0008D46BE /* trivia.json */,
+			);
+			path = Harry_Potter_Trivia_iOS_App;
+			sourceTree = "<group>";
+		};
 		26E589482D10835700C094D7 = {
 			isa = PBXGroup;
 			children = (
-				26E589532D10835700C094D7 /* Harry_Potter_Trivia_iOS_App */,
+				2686893A2D1112E0008D46BE /* Harry_Potter_Trivia_iOS_App */,
 				26E589522D10835700C094D7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,9 +111,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				26E589532D10835700C094D7 /* Harry_Potter_Trivia_iOS_App */,
 			);
 			name = Harry_Potter_Trivia_iOS_App;
 			packageProductDependencies = (
@@ -109,6 +158,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2686893E2D1112E0008D46BE /* Preview Assets.xcassets in Resources */,
+				2686893F2D1112E0008D46BE /* Assets.xcassets in Resources */,
+				268689402D1112E0008D46BE /* deep-in-the-dell.mp3 in Resources */,
+				268689412D1112E0008D46BE /* hiding-place-in-the-forest.mp3 in Resources */,
+				268689422D1112E0008D46BE /* let-the-mystery-unfold.mp3 in Resources */,
+				268689432D1112E0008D46BE /* magic-in-the-air.mp3 in Resources */,
+				268689442D1112E0008D46BE /* magic-wand.mp3 in Resources */,
+				268689452D1112E0008D46BE /* negative-beeps.mp3 in Resources */,
+				268689462D1112E0008D46BE /* page-flip.mp3 in Resources */,
+				268689472D1112E0008D46BE /* spellcraft.mp3 in Resources */,
+				268689482D1112E0008D46BE /* trivia.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +179,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2686893B2D1112E0008D46BE /* Constants.swift in Sources */,
+				2686893C2D1112E0008D46BE /* ContentView.swift in Sources */,
+				2686893D2D1112E0008D46BE /* Harry_Potter_Trivia_iOS_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
