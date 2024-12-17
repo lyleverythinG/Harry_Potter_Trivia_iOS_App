@@ -6,7 +6,28 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct InfoBackgroundImage: View {
+    var body: some View {
+        Image("parchment")
+            .resizable()
+            .ignoresSafeArea()
+            .background(.brown)
+    }
+}
 
 enum Constants {
-     static let hpFont = "PartyLetPlain"
+    static let hpFont = "PartyLetPlain"
+}
+
+extension Button {
+    func doneButton() -> some View {
+        self
+            .font(.largeTitle)
+            .padding()
+            .buttonStyle(.borderedProminent)
+            .tint(.brown)
+            .foregroundStyle(.white)
+    }
 }
