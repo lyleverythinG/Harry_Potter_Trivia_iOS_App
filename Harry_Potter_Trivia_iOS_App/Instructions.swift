@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Instructions: View {
     @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
         ZStack {
             InfoBackgroundImage()
