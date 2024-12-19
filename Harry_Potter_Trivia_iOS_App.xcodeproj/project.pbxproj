@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26505E2E2D14ABA5003EE10C /* HPCOnfig.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 26505E2D2D14ABA5003EE10C /* HPCOnfig.storekit */; };
+		26505E302D14AC83003EE10C /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26505E2F2D14AC83003EE10C /* Store.swift */; };
 		2655A1092D11253C00E0EF57 /* Instructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655A1082D11253C00E0EF57 /* Instructions.swift */; };
 		2655A10B2D112A5A00E0EF57 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655A10A2D112A5A00E0EF57 /* Settings.swift */; };
 		2655A10D2D11394B00E0EF57 /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655A10C2D11394B00E0EF57 /* Gameplay.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26505E2D2D14ABA5003EE10C /* HPCOnfig.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = HPCOnfig.storekit; sourceTree = "<group>"; };
+		26505E2F2D14AC83003EE10C /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		2655A1082D11253C00E0EF57 /* Instructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructions.swift; sourceTree = "<group>"; };
 		2655A10A2D112A5A00E0EF57 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		2655A10C2D11394B00E0EF57 /* Gameplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
@@ -75,7 +79,9 @@
 				2655A10C2D11394B00E0EF57 /* Gameplay.swift */,
 				2655A10A2D112A5A00E0EF57 /* Settings.swift */,
 				2655A1082D11253C00E0EF57 /* Instructions.swift */,
+				26505E2F2D14AC83003EE10C /* Store.swift */,
 				2686892E2D1112E0008D46BE /* Constants.swift */,
+				26505E2D2D14ABA5003EE10C /* HPCOnfig.storekit */,
 				268689302D1112E0008D46BE /* deep-in-the-dell.mp3 */,
 				268689312D1112E0008D46BE /* Harry_Potter_Trivia_iOS_AppApp.swift */,
 				268689322D1112E0008D46BE /* hiding-place-in-the-forest.mp3 */,
@@ -173,6 +179,7 @@
 				268689412D1112E0008D46BE /* hiding-place-in-the-forest.mp3 in Resources */,
 				268689422D1112E0008D46BE /* let-the-mystery-unfold.mp3 in Resources */,
 				268689432D1112E0008D46BE /* magic-in-the-air.mp3 in Resources */,
+				26505E2E2D14ABA5003EE10C /* HPCOnfig.storekit in Resources */,
 				268689442D1112E0008D46BE /* magic-wand.mp3 in Resources */,
 				268689452D1112E0008D46BE /* negative-beeps.mp3 in Resources */,
 				268689462D1112E0008D46BE /* page-flip.mp3 in Resources */,
@@ -188,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26505E302D14AC83003EE10C /* Store.swift in Sources */,
 				2686893B2D1112E0008D46BE /* Constants.swift in Sources */,
 				2655A10D2D11394B00E0EF57 /* Gameplay.swift in Sources */,
 				2686893C2D1112E0008D46BE /* ContentView.swift in Sources */,

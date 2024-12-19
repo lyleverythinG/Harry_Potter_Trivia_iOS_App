@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Harry_Potter_Trivia_iOS_AppApp: App {
+    @StateObject private var store = Store()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(store)
         }
     }
 }
