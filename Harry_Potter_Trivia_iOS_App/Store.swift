@@ -21,8 +21,16 @@ class Store: ObservableObject {
     @Published var purchasedIDs = Set<String>()
     
     private var productIDs = ["hp4", "hp5", "hp6", "hp7"]
-    
+    private var productToBookMap: [String: Int] {
+        [
+            "hp4": 3,
+            "hp5": 4,
+            "hp6": 5,
+            "hp7": 6
+        ]
+    }
     private var updates: Task<Void, Never>? = nil
+    
     init() {
         updates = watchForUpdates()
     }
@@ -48,13 +56,20 @@ class Store: ObservableObject {
                     
                 case .verified(let signedType):
                     purchasedIDs.insert(signedType.productID)
+                    
+                    if let bookIndex = productToBookMap[signedType.productID] {
+                        books[bookIndex] = .active
+                    }
                 }
+                
                 // User cancelled or parent disapproved child's purchase request.
             case .userCancelled:
                 break
+                
                 // Waiting for approval.
             case .pending:
                 break
+                
             @unknown default:
                 break
             }
@@ -73,6 +88,10 @@ class Store: ObservableObject {
             case .verified(let signedType):
                 if signedType.revocationDate == nil {
                     purchasedIDs.insert(signedType.productID)
+                    
+                    if let bookIndex = productToBookMap[signedType.productID] {
+                        books[bookIndex] = .active
+                    }
                 } else {
                     purchasedIDs.remove(signedType.productID)
                 }
@@ -83,7 +102,7 @@ class Store: ObservableObject {
     private func watchForUpdates() -> Task<Void, Never> {
         Task(priority: .background) {
             for await _ in Transaction.updates {
-                 await checkPurchased()
+                await checkPurchased()
             }
         }
     }

@@ -14,6 +14,9 @@ struct Harry_Potter_Trivia_iOS_AppApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(store)
+                .task {
+                    await store.loadProducts()
+                }
         }
     }
 }
