@@ -11,6 +11,11 @@ import SwiftUI
 class Game: ObservableObject {
     private var allQuestions: [Question] = []
     private var answeredQuestions: [Int] = []
+    var answers: [String] = []
+    
+    var correctAnswer: String {
+        currentQuestion.answers.first(where: {$0.value == true})!.key
+    }
     
     var filteredQuestions: [Question] = []
     var currentQuestion = Constants.previewQuestion
@@ -37,6 +42,20 @@ class Game: ObservableObject {
             potentialQuestion = filteredQuestions.randomElement()!
         }
         currentQuestion = potentialQuestion
+        
+        answers = []
+        
+        for answer in currentQuestion.answers.keys {
+            answers.append(answer)
+        }
+        
+        answers.shuffle()
+    }
+    
+    func correct() {
+        answeredQuestions.append(currentQuestion.id)
+        
+        //TODO: Update score
     }
     
     private func decodeQuestions() {
