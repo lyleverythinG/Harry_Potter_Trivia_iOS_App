@@ -10,6 +10,7 @@ import AVKit
 
 struct ContentView: View {
     @EnvironmentObject private var store: Store
+    @EnvironmentObject private var game: Game
     @State private var audioPlayer: AVAudioPlayer!
     @State private var scalePlayButton = false
     @State private var moveBgImage = false
@@ -126,6 +127,7 @@ struct ContentView: View {
                                 .transition(.offset(y: geo.size.height / 3))
                                 .fullScreenCover(isPresented: $playGame) {
                                     Gameplay()
+                                        .environmentObject(game)
                                 }
                             }
                         }
@@ -183,5 +185,6 @@ struct ContentView: View {
     VStack {
         ContentView()
             .environmentObject(Store())
+            .environmentObject(Game())
     }
 }
