@@ -18,6 +18,8 @@ struct Harry_Potter_Trivia_iOS_AppApp: App {
                 .environmentObject(game)
                 .task {
                     await store.loadProducts()
+                    game.loadScores()
+                    store.loadStatus()
                 }
         }
     }
